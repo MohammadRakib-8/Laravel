@@ -7,13 +7,13 @@
 </head>
 <body>
 
-    <form action="{{route('test')}}" method="POST" >
+    <form method="POST" action="{{route('test')}}">
 
     @csrf
 <label for="userName">User Name</label>
-<input type="text" id="uName" name="uName"><br>
+<input type="text" id="uName" name="name"><br>
 <label for="description">Description</label>
-<textarea id="description" name="uDescription" row="5" col="50" placeholder="Write About Yourself Somthing"></textarea><br>
+<textarea id="description" name="description" row="5" col="50" placeholder="Write About Yourself Somthing"></textarea><br>
 <input type="file" id="imageFile" name="imageFile" placeholder="Choose file">
 <button type="submit" id="submitBtn">Submit</button>
 </form>
