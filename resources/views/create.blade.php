@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+<<<<<<< HEAD
 
     <form method="POST" action="{{route('test')}}">
 
@@ -17,5 +18,8 @@
 <input type="file" id="imageFile" name="imageFile" placeholder="Choose file">
 <button type="submit" id="submitBtn">Submit</button>
 </form>
+=======
+    Test
+>>>>>>> 89ddedadc23e743ff53aa5e4e0071da674c9d21a
 </body>
 </html>
