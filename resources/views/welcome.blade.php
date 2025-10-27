@@ -9,7 +9,7 @@
 <body>
     <div class="TopArea">
     <h2>Home</h2>
-    <button id=createAccBtn>Create Account</button>
+   <a href="/create"> <button  id=createAccBtn>Create Account</button></a>
 </div>
 
 </body>
