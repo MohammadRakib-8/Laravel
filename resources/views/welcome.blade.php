@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/app.css"/>
 </head>
 <body>
     <div class="TopArea">
@@ -12,5 +11,8 @@
    <a href="/create"> <button  id=createAccBtn>Create Account</button></a>
 </div>
 
+@if(session('success'))
+        <h2>{{ session('success')}}</h2>
+@endif
 </body>
 </html>
