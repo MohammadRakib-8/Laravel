@@ -9,11 +9,7 @@
 <body>
     <div class="TopArea">
     <h2>Home</h2>
-<<<<<<< HEAD
    <a href="/create"> <button  id=createAccBtn>Create Account</button></a>
-=======
-    <button id=createAccBtn>Create Account</button>
->>>>>>> 89ddedadc23e743ff53aa5e4e0071da674c9d21a
 </div>
 
 </body>
