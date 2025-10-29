@@ -11,13 +11,13 @@
 
     @csrf
 <label for="userName">User Name</label>
-<input type="text" id="uName" name="name"><br>
+<input type="text" id="uName" name="name" value="{{old('name')}}"><br>
 @error('name')
 <div>{{$message}}</div> 
 @enderror
 <label for="description">Description</label>
 
-<textarea id="description" name="description" row="5" col="50" placeholder="Write About Yourself Somthing"></textarea><br>
+<textarea id="description" name="description" row="5" col="50" placeholder="Write About Yourself Somthing" value="{{old('description')}}"></textarea><br>
 @error('description')
 <div>{{$message}}</div>
 @enderror
