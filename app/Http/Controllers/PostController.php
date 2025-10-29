@@ -13,6 +13,14 @@ public function create(){
     return view('create');
 }
 public function ourTestStorage(Request $request){
+
+    $validated=$request->validate([
+       'name' => 'required|unique:posts',
+        'description' => 'required|unique:posts|max:255',
+        'imageFile'=> 'nullable|mimes:jpeg,png,jpg',
+    ]);
+
+
     $post= new post;
     $post->name=$request->name;
     $post->description = $request->description;
