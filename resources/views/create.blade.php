@@ -7,7 +7,10 @@
 </head>
 <body>
 
-    <form method="POST" action="{{route('test')}}">
+    <form method="POST" action="{{route('test')}}" enctype="multipart/form-data"> 
+        
+    
+    <!-- enctype added for resolving problem of the file upload -->
 
     @csrf
 <label for="userName">User Name</label>
