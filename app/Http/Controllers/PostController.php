@@ -33,4 +33,11 @@ public function ourTestStorage(Request $request){
     //    return redirect()->route('home'); //For redirecting inton a specific route or page
 return redirect()->route('home')->with('success','Successfully saved data into database');  //Flash message using session
 }
+
+public function editData(){
+return view('edit');
 }
+
+
+}
+

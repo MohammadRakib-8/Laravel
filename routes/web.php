@@ -10,3 +10,6 @@ Route::get('/', function () {
 
 Route::get('/create', [PostController::class, 'create']);
 Route::post('/test', [PostController::class, 'ourTestStorage'])->name('test');
+
+
+Route::get('/edit', [PostController::class, 'editData'])->name('edit');
