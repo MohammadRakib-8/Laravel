@@ -21,10 +21,15 @@ public function ourTestStorage(Request $request){
     ]);
 
 
+//Uploading image File
+$upImageFile=time().'.'.$request->imageFile->extension();
+$request->imageFile->move(public_path('images'),$upImageFile);
+
+//Add new post
     $post= new post;
     $post->name=$request->name;
     $post->description = $request->description;
-    $post->image=$request->imageFile;
+    $post->image=$upImageFile;
 
     $post->save();
    
