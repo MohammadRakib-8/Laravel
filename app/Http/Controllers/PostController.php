@@ -39,6 +39,14 @@ $post=post::findOrFail($id);
 return view('edit',['ssPost'=>$post]);
 }
 
+public function deleteData($id){
+$post=post::findOrFail($id);
+$post->delete();
+flash()->success('Delete Successfull!');
+return redirect()->route('home');
+;
+}
+
 public function updateData($id,Request $request){
     
     $validated=$request->validate([
@@ -51,7 +59,7 @@ public function updateData($id,Request $request){
     $post= post::findOrFail($id);
     $post->name=$request->name;
     $post->description = $request->description;
-    $post->image=$request->imageFile;
+  
 
     $post->save();
    
